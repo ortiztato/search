@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            h1 {
+                color: rgb(192, 13, 13);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: 80;
+                margin-left: 30px;
+                margin-top: 30px;
+
+            }
+            img {
+                display: block;
+                margin-left: 10px;
+                margin-right: auto;
+      
+            }
+
+            a {
+                font-size: 14px;
+                color: black;
+                text-align: right;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 100;
+                margin: 5px;
+                text-decoration:none;
+                border-bottom: none;
+            }
+
+            form {
+                text-align: center;
+                padding: 2px;
+     
+            }
+           #barra {
+                width: 600px;
+                border-style:groove ;
+                border-width: 1px;
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                font-size: 15px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+            }
+
+             .intabla {
+                width: 500px;
+                border-width: 1px;
+                border-color: rgb(236, 238, 238);
+                padding: 6px;
+                margin: 10px;
+                text-align:left;
+                font-size: 14px;
+                font-family:Arial, Helvetica, sans-serif;
+               
+            }
+
+            th{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                font-weight: 100;
+                margin-left: 40px;
+            }
+            td {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 100;
+                margin-left: 40px;
+                text-align: left;
+            }
+            .filas {
+                height: 10px;
+                margin: 1px;
+                padding: 1px;
+            }
+            #boton {
+                background-color: rgb(58, 58, 250);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: white;
+                text-align: right;
+                border-style: none;
+                padding: 6px;
+                border-radius: 5px;
+                float: right;
+                margin-right: 20px;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: absolute; right: 20px; top: 20px">
+            <div><a href="SEARCH.html">Volver a Google Search</a></div>
+        </div>
+        <div style="position: relative; top: 20px;">
+            <img src="googlelogo.png" alt="logo" width="80px" >
+            <h1>Busqueda Avanzada</h1>
+            <hr style="margin-top: 30px;">
+            <form >
+                <table style="margin-left: 50px;">
+                    <thead >
+                        <th>Mostrar paginas que contengan...</th>
+                        <th style="width: 500px;"></th>
+                        <th>Para hacer esto en el cuadro de busqueda</th>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 10px;">
+                        </tr>
+                        <tr class="filas">
+                            <td>todas estas palabras:</td>
+                            <td>
+                            <input class="intabla" type="text" name="as_q">
+                            </td>
+                            <td>ingresa las palabras importantes: terrier ratonero</td>
+                        </tr>
+                        <tr class="filas">
+                            <td>esta palabra o frase exactas:</td>
+                            <td><input class="intabla" type="text" name="as_epq"></td>
+                            <td>ingrese las palabras exactas entre comillas: "terrier ratonero"</td>
+                        </tr>
+                        <tr class="filas">
+                            <td>cualquiera de estas palabras:</td>
+                            <td><input class="intabla" type="text" name="as_oq"></td>
+                            <td>ingrese or entre las palabras que desees: en miniatura or estandar</td>
+                        </tr>
+                        <tr class="filas">
+                            <td>ninguna de estas palabras:</td>
+                            <td><input class="intabla" type="text" name="as_eq"></td>
+                            <td>ingrese un signo menos justo delante: -roedor</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input id="boton" type="submit" value="busqueda avanzada" formaction="https://www.google.com/search">                                
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>        
+    </body>
+</html>
